@@ -140,4 +140,9 @@
       display: none;
    }
 
+   .container .video-list-container {
+      flex: 1 1 250px; /* Ajusta el tamaño del contenedor según tus necesidades */
+      height: 200px; /* Ajusta la altura del contenedor según tus necesidades */
+    }
+
 }
