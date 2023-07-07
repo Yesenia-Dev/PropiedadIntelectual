@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="iot mycloudschool cursos" name="keywords">
     <meta content="Internet" name="description">
-    <link rel="icon" href="assets/imgs/favicon.png">
+    <link rel="icon" href="/assets/imgs/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"><!-- Font Awesome -->
@@ -14,12 +14,14 @@
     <link href="css/video-panel.css" rel="stylesheet" >
     <link href="css/style.css" rel="stylesheet">
     <link href="css/popup.css" rel="stylesheet" type="text/css">
+    <link href="https://vjs.zencdn.net/7.15.0/video-js.css" rel="stylesheet">
     <script defer src="js/video_panel.js"></script>
     <script defer src="js/video_content.js"></script>
     <script defer src="js/sidenav.js"></script>
     <script defer src="js/popup-content.js"></script>
     <script src="https://kit.fontawesome.com/c4df7659ff.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://vjs.zencdn.net/7.15.0/video.js"></script>
 </head>
 
 <body>
@@ -110,7 +112,7 @@
                 </div>
                 
                 <div id="open_nav">Antecedentes Necesarios</div>
-                <img id="ante_icon" src="/assets/imgs/iot/ante_icono.png" style="width: 75px; cursor: pointer;">
+                <img id="ante_icon" src="/assets/imgs/iot/ante_icono.png" style="width: 60px; cursor: pointer;">
 
 
             </div>
@@ -124,67 +126,52 @@
             </div>
         
             <div class="podcast-cont vid video-content vid01">
-            <p>¿Qué es el IoT?</p>
-            <audio controls>
-                <source preload="auto" src="https://mcsiotassets.blob.core.windows.net/assets/audios/vid01/MCSIOTRB_vid01_pod01.mp3" id="iframeAudio">
-            </audio>
-            <p>¿Qué es un dispositivo inteligente?</p>
-            <audio controls>
-                <source preload="auto" src="https://mcsiotassets.blob.core.windows.net/assets/audios/vid01/MCSIOTRB_vid01_pod02.mp3" id="iframeAudio">
-            </audio>
+                <p>¿Qué es el IoT?</p>
+                <audio controls preload="auto" src="/assets/audios/vid01/MCSIOTRB_vid01_pod01.mp3" id="audio1"></audio>
+                <p>¿Qué es un dispositivo inteligente?</p>
+                <audio controls preload="auto" src="/assets/audios/vid01/MCSIOTRB_vid01_pod02.mp3" id="audio2"></audio>
             </div>
-        
+              
             <div class="podcast-cont vid video-content vid02 display-none">
             <h4></h4>
             <p>El impacto del IoT en la vida cotidiana.</p>
-            <audio controls>
-                <source preload="auto" src="https://mcsiotassets.blob.core.windows.net/assets/audios/vid02/MCSIOTRB_vid02_pod01.mp3" id="iframeAudio">
-            </audio>
+            <audio controls preload="auto" src="/assets/audios/vid02/MCSIOTRB_vid02_pod01.mp3" id="audio3"></audio>
             <p>Internet de las cosas en salud</p>
-            <audio controls>
-                <source preload="auto" src="https://mcsiotassets.blob.core.windows.net/assets/audios/vid02/MCS_IOTRB_vid02_pod2.mp3" id="iframeAudio">
-            </audio>
+            <audio controls preload="auto" src="/assets/audios/vid02/MCSIOTRB_vid02_pod02.mp3" id="audio4"></audio>
             <p>Smart Retail</p>
-            <audio controls>
-                <source preload="auto" src="https://mcsiotassets.blob.core.windows.net/assets/audios/vid02/MCS_IOTRB_vid02_pod3.mp3" id="iframeAudio">
-            </audio>
+            <audio controls preload="auto" src="/assets/audios/vid02/MCSIOTRB_vid02_pod03.mp3" id="audio5"></audio>
             </div>
         
             <div class="podcast-cont vid video-content vid03 width-100 display-none">
             <p>¿Qué es Microsoft Azure?</p>
-            <audio controls>
-                <source preload="auto" src="https://mcsiotassets.blob.core.windows.net/assets/audios/vid03/MCS_IOTRB_vid03_pod1.mp3" id="iframeAudio">
-            </audio>
+            <audio controls preload="auto" src="/assets/audios/vid03/MCS_IOTRB_vid03_pod1.mp3" id="audio6"></audio>
             <p>¿Qué es Azure IoT Hub?</p>
-            <audio controls>
-                <source preload="auto" src="https://mcsiotassets.blob.core.windows.net/assets/audios/vid03/MCS_IOTRB_vid03_pod2.mp3" id="iframeAudio">
-            </audio>
+            <audio controls preload="auto" src="/assets/audios/vid03/MCS_IOTRB_vid03_pod2.mp3" id="audio7"></audio>
             <p>¿Qué es Azure IoT Edge?</p>
-            <audio controls>
-                <source preload="auto" src="https://mcsiotassets.blob.core.windows.net/assets/audios/vid03/MCS_IOTRB_vid03_pod3.mp3" id="iframeAudio">
-            </audio>
+            <audio controls preload="auto" src="/assets/audios/vid03/MCS_IOTRB_vid03_pod3.mp3" id="audio8"></audio>
             </div>
         </div>
         <!-- About End -->
   
         <div class="main-video-container">
-            <video src="https://mcsiotassets.blob.core.windows.net/assets/videos/MCS_IOTRB_vid01.mp4" controls poster preload="auto" class="main-video"></video>
+            <video src="/assets/videos/MCS_IOTRB_vid01.mp4" controls poster class="main-video"></video>
             <h2 class="main-vid-title font-size-1em">Conceptos Generales Del IoT</h2>
         </div>
         
         <div class="video-list-container">
             <div class="list active vid01">
-                <video src="https://mcsiotassets.blob.core.windows.net/assets/videos/MCS_IOTRB_vid01.mp4" class="list-video"></video>
+                <video src="/assets/videos/MCS_IOTRB_vid01.mp4" class="list-video" preload="auto"></video>
                 <h2 class="list-title">Conceptos Generales del IoT</h2>
-            </div>
-            <div class="list vid02">
-                <video src="https://mcsiotassets.blob.core.windows.net/assets/videos/MCS_IOTRB_vid02.mp4" class="list-video"></video>
+              </div>
+              <div class="list vid02">
+                <video src="/assets/videos/MCS_IOTRB_vid02.mp4" class="list-video" preload="metadata"></video>
                 <h2 class="list-title">Aplicaciones del IoT en la vida cotidiana</h2>
-            </div>
-            <div class="list vid03">
-	    	    <video src="https://mcsiotassets.blob.core.windows.net/assets/videos/MCS_IOTRB_vid03.mp4" class="list-video"></video>
-		        <h2 class="list-title">Servicios de IoT en Microsoft Azure</h2>
-            </div>
+              </div>
+              <div class="list vid03">
+                <video src="/assets/videos/MCS_IOTRB_vid03.mp4" class="list-video" preload="metadata"></video>
+                <h2 class="list-title">Servicios de IoT en Microsoft Azure</h2>
+              </div>
+              
         </div>
         
         <div class="d-flex width-100 justify-content-around font-size-1-5em">
@@ -199,9 +186,9 @@
             <div> <!-- Presentación No. 1-->
                 <h4>Contenido del Video</h4>
                 <div class="width-100 d-flex overflow-hidden slides-container ">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid01/MCS_IOTRB_vid01_sli01.jpg" class="width-100">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid01/MCS_IOTRB_vid01_sli02.jpg" class="width-100">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid01/MCS_IOTRB_vid01_sli03.jpg" class="width-100">
+                    <img src="/assets/slides/vid01/MCS_IOTRB_vid01_sli01.jpg" class="width-100">
+                    <img src="/assets/slides/vid01/MCS_IOTRB_vid01_sli02.jpg" class="width-100">
+                    <img src="/assets/slides/vid01/MCS_IOTRB_vid01_sli03.jpg" class="width-100">
                 </div>
                 <div class="width-100 d-flex justify-content-between p-5">
                     <!-- <button style="border-radius: 25px;" class="previous-slide slide-button ar-4-1">	&#60;</button>
@@ -231,12 +218,12 @@
             <div> <!-- Presentación No. 2-->
                 <h4>Contenido del Video</h4>
                 <div class="width-100 d-flex overflow-hidden slides-container ">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid02/MCS_IOTRB_vid02_sli01.jpg"class="width-100">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid02/MCS_IOTRB_vid02_sli02.jpg"class="width-100">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid02/MCS_IOTRB_vid02_sli03.jpg"class="width-100">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid02/MCS_IOTRB_vid02_sli04.jpg"class="width-100">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid02/MCS_IOTRB_vid02_sli05.jpg"class="width-100">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid02/MCS_IOTRB_vid02_sli06.jpg"class="width-100">
+                    <img src="/assets/slides/vid02/MCS_IOTRB_vid02_sli01.jpg"class="width-100">
+                    <img src="/assets/slides/vid02/MCS_IOTRB_vid02_sli02.jpg"class="width-100">
+                    <img src="/assets/slides/vid02/MCS_IOTRB_vid02_sli03.jpg"class="width-100">
+                    <img src="/assets/slides/vid02/MCS_IOTRB_vid02_sli04.jpg"class="width-100">
+                    <img src="/assets/slides/vid02/MCS_IOTRB_vid02_sli05.jpg"class="width-100">
+                    <img src="/assets/slides/vid02/MCS_IOTRB_vid02_sli06.jpg"class="width-100">
                 </div>
                 <div class="width-100 d-flex justify-content-between p-5">
                     <i class=" previous-slide slide-button arrow arrow_left  fa-solid fa-circle-left"></i>
@@ -250,11 +237,11 @@
             <div> <!-- Presentación No. 3-->
                 <h4>Contenido del Video</h4>
                 <div class="width-100 d-flex overflow-hidden slides-container ">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid03/MCS_IOTRB_vid03_sli01.jpg" class="width-100">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid03/MCS_IOTRB_vid03_sli02.jpg" class="width-100">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid03/MCS_IOTRB_vid03_sli03.jpg" class="width-100">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid03/MCS_IOTRB_vid03_sli04.jpg" class="width-100">
-                    <img src="https://mcsiotassets.blob.core.windows.net/assets/slides/vid03/MCS_IOTRB_vid03_sli05.jpg" class="width-100">
+                    <img src="/assets/slides/vid03/MCS_IOTRB_vid03_sli01.jpg" class="width-100">
+                    <img src="/assets/slides/vid03/MCS_IOTRB_vid03_sli02.jpg" class="width-100">
+                    <img src="/assets/slides/vid03/MCS_IOTRB_vid03_sli03.jpg" class="width-100">
+                    <img src="/assets/slides/vid03/MCS_IOTRB_vid03_sli04.jpg" class="width-100">
+                    <img src="/assets/slides/vid03/MCS_IOTRB_vid03_sli05.jpg" class="width-100">
                 </div>
                 <div class="width-100 d-flex justify-content-between p-5">
                     <i class=" previous-slide slide-button arrow arrow_left  fa-solid fa-circle-left"></i>

@@ -218,3 +218,4 @@ function getVideoIndex(currentVideoNumber) {
     const number = currentVideoNumber.substring(3,5);
     return parseInt(number) - 1 ;
 }
+
