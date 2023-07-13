@@ -8,6 +8,7 @@ function closeNav() {
 
 document.getElementById("open_nav").addEventListener("click", (ev) => {
   openNav();
+  
 });
 
 document.getElementById("close-nav").addEventListener("click", (ev) => {
