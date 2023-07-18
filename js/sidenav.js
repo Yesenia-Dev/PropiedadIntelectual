@@ -59,3 +59,19 @@ document.getElementById("ante_icon").addEventListener("click", (ev) => {
     audio3.currentTime = 0;*/
   }
 });
+
+
+
+/* Prueba de menu chiquito*/
+function open_nav1() {
+  document.getElementById("mySidenav").style.width = "400px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0px";
+}
+
+document.getElementById("open_nav1").addEventListener("click", (ev) => {
+  open_nav1();
+  
+});
