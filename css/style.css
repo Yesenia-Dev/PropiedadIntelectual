@@ -36,6 +36,7 @@
   --light: #FFFFFF;
   --dark: #44425A;
   --black: #000000;
+  --iot-header: #024059; 
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -9920,7 +9921,6 @@ h6,
   display: flex;
   width: 100%;
   float: left; 
-
 }
 
 .bg-author-iot {
@@ -10628,7 +10628,7 @@ background: #024059;
   top: 20rem;
   left: 25rem;
   position: absolute;
-  width: 57%;
+  width: 70%;
 }
 @media (max-width: 906px) {
   .orden_texto {
@@ -11210,4 +11210,99 @@ audio {
   height: 100vh;
   transition: .3s;
   z-index: 1;
+}
+
+/*  
+* Edgar Changes
+*/
+
+.header {
+  background-color: var(--iot-header);
+  width: 100%;
+  height: 250PX;
+}
+
+.header-logo {
+  display: block;
+  max-height:
+  80px;
+  width: auto;
+  height: auto;
+}
+
+.header-h1 {
+  margin-top: 1.5em;
+  color: #FFF;
+}
+
+@media ( max-width: 1000px) {
+  .header {
+    width: 100%;
+    height: 250PX;
+  }
+
+  .header-logo-container {
+    display: flex;
+    width: 90%;
+  }
+
+  .header-logo {
+    transform: scale(.5);
+  }
+
+  .header-h1 {
+    color: #FFF;
+  }
+
+  
+  
+}
+
+@media (max-width: 816px) {
+  .nav1 > ul {
+    display: none;
+  }
+  
+}
+
+@media ( max-width: 750px) {
+  .header {
+    width: 100vw;
+    height: 150PX;
+  }
+
+  .header-logo {
+    display: none;
+    transform: scale(.1);
+  }
+
+  .header-h1 {
+    color: #FFF;
+  }
+
+  .orden_texto {
+ 
+    text-justify: auto;
+    top: 15rem;
+    left: 5rem;
+    position: absolute;
+    width: 70%;
+  }
+  
+}
+@media ( max-width: 500px) {
+  
+  .header-h1 {
+    margin-top: .9em;
+    color: #FFF;
+    transform: scale(.8);
+  }
+
+  .orden_texto {
+    text-justify: auto;
+    top: 10rem;
+    left: 5rem;
+    position: absolute;
+  }
+  
 }
