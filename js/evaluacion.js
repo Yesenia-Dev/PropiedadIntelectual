@@ -96,6 +96,7 @@ const examJSON = {
     }
 };
 
+/*
 document.querySelector('#evaluacion-button').
     addEventListener('click',ev => {
 
@@ -108,4 +109,4 @@ document.querySelector('#evaluacion-button').
         
         window.location.href = evaluacionAppURL + '?metadata=' + preguntasJson;
 
-    },);
+    },);*/
